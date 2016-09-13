@@ -18,15 +18,13 @@ def main():
     html = env.get_template(TEMPLATE_FILE).render(table=table)
     return html
 
-
 @app.route('/creator/<string:creator>/')
 def creator(creator):
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR))
     table = table_fu.TableFu(open(DATA_FILE, 'U'))
-    t2 = table.filter(Creator=creator)
+    t2 = table.filter(Creator=creator.replace("_"," "))
     html = env.get_template(TEMPLATE_FILE).render(table=t2)
     return html
-
 
 @app.route('/tag/<string:tag>/')
 def tag(tag):
@@ -41,13 +39,9 @@ def tag(tag):
     html = env.get_template(TEMPLATE_FILE).render(table=t2)
     return html
 
-
-
 @app.route('/<path:path>/')
 def page(path):
 	return "Nothing here at the moment."
-
-
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=80)
