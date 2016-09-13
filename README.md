@@ -65,7 +65,7 @@
 
 #### 
 
-#### Code samples borrowed from these tutorials:
+#### To learn more, see the following tutorials (from which I cribbed some of this code):
      
      http://blog.apps.chicagotribune.com/2010/12/07/from-spreadsheet-to-html-in-15-minutes-with-python-tablefu-jinja-and-flask/
      
