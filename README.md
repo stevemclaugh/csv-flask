@@ -3,11 +3,11 @@
 
 #### This repository has 3 components:
 
-#### sitebuilder.py - Dynamic page generator using Flask (minimal Web framework for Python)
+* sitebuilder.py - Dynamic page generator using Flask (minimal Web framework for Python)
 
-#### videos.html - HTML page template in Jinja2
+* videos.html - HTML page template in Jinja2
 
-#### videos.csv - Comma-separated metadata for each item on site, including video links. Rearranging and/or adding columns won't disrupt the page generator, but be sure to leave the column headers intact. Not all metadata fields are currently displayed. YouTube videos with 'TRUE' in 'Display Video' field will embed automatically.
+* videos.csv - Comma-separated metadata for each item on site, including video links. Rearranging and/or adding columns won't disrupt the page generator, but be sure to leave the column headers intact. Not all metadata fields are currently displayed. YouTube videos with 'TRUE' in 'Display Video' field will embed automatically.
 
      ['Creator', 'Piece Title', 'Year', 'Date', 'Date Published', 'Event Name', 'Format/Genre', 'Venue', 'City', 'State/Province', 'Country', 'Notes', 'Tags', 'Display Video', 'Video URL', 'Text/Event URL', 'Language', 'License', 'Date Accessed']
 
