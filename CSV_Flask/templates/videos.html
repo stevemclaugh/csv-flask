@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <title>Some Talks and Readings</title>
+     
+     <style>
+body {
+     background-color: linen;
+}
+
+h1 {
+     color: maroon;
+     text-align: left;
+     margin-left:300px;
+     padding-top:30px;
+     padding-bottom:0px;
+     font-family: Arial, sans-serif;
+     font-size: 50px;
+} 
+
+ul {
+     margin: auto;
+     width: 50%;
+     list-style-type: none;
+}
+li{
+padding-top:5px;
+padding-bottom:80px;
+}
+
+div{
+     margin: auto;
+     width: 400px;
+     font-size:16px;
+     font-family: Arial, sans-serif;
+}
+
+
+div.creator{
+     color: maroon;
+     text-indent: -35px ;
+     padding-top:13px;
+     font-weight:bold;
+     font-size:22px;
+}
+
+
+div.field{
+     color: maroon;
+     padding-left: 22px ;
+     text-indent: -14px ;
+     padding-top:5px;
+}
+
+
+div.youtube{
+     color: maroon;
+     padding-left: 22px ;
+     text-indent: -14px ;
+     padding-bottom:0px;
+}
+
+
+
+div.{
+
+}
+
+
+
+
+
+
+</style>
+
+
+     
+</head>
+<body>
+<h1>Some Talks and Readings</h1>
+
+<ul id="videos">	
+{% for row in table.rows %}
+     <li>
+
+
+
+         {% if row['Video URL'] %}
+         {% if row['Display Video']=="TRUE" %}
+         <div class="youtube"><iframe src="{{ row['Video URL']|replace("watch?v=", "embed/") }}" width="560" height="315" frameborder="0" allowfullscreen></iframe></div>
+
+         {% endif %}
+         {% endif %}
+
+
+
+
+<div class="creator">{{ row['Creator'] }}</div>
+
+         {% if row['Piece Title']|trim %}
+<div class="field">&#9659; {{ row['Piece Title'] }}</div>
+         {% endif %}
+         
+         {% if row['Date']|trim %}
+<div class="field">&#9659; {{ row['Date'] }}</div>
+         {% elif row['Year']|trim %}
+<div class="field">&#9659; {{ row['Year'] }}</div>
+         {% endif %}
+
+         {% if row['Event Name']|trim %}
+<div class="field">&#9659; {{ row['Event Name'] }}</div>
+         {% endif %}
+
+         {% if row['Venue']|trim %}
+<div class="field">&#9659; {{ row['Venue'] }}</div>
+         {% endif %}
+
+         {% if row['City']|trim %}
+<div class="field">&#9659; {{ row['City'] }}</div>
+         {% endif %}
+
+
+         {% if row['Notes']|trim %}
+<div class="field">&#9659; {{ row['Notes'] }}</div>
+         {% endif %}
+
+
+         {% if row['Tags']|trim %}
+<div class="field"><small>&#9659; Tags:  {{ row['Tags'] }}</small></div>
+         {% endif %}
+
+
+
+         {% if row['Video URL'] %}
+         {% if row['Display Video']=="FALSE" %}
+<div class="field">&#9659; <a href="{{ row['Video URL']|safe }}">{{ row['Video URL']|safe }}</a></div>
+         {% endif %}
+         {% endif %}
+
+
+
+
+
+
+
+</li>
+{% endfor %}</ul>
+
+<p><br /></p>
+
+</body>
+</html>
+
+
+<!--
+Date
+Format/Genre
+Text/Abstract/Event URL
+Language
+License
+Date Accessed
+-->
