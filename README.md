@@ -3,16 +3,19 @@
 
 #### This repository has 3 parts:
 
-##### sitebuilder.py - Dynamic page generator using Flask (minimal Web framework for Python)
+##### sitebuilder.py 
+#####  - Dynamic page generator using Flask (minimal Web framework for Python)
 
-##### videos.html - Front page template in Jinja2
+##### videos.html
+#####  - HTML page template in Jinja2
 
-##### videos.csv — Comma-separated metadata for each item on site, including video links. YouTube videos with 'TRUE' in 'Display Video' field will embed automatically. Rearranging and/or adding columns won't disrupt the page generator, but be sure to leave the column headers intact. Not all fields are currently displayed.
+##### videos.csv 
+#####  — Comma-separated metadata for each item on site, including video links. YouTube videos with 'TRUE' in 'Display Video' field will embed automatically. Rearranging and/or adding columns won't disrupt the page generator, but be sure to leave the column headers intact. Not all fields are currently displayed. Here they are for reference:
+
      ['Creator', 'Piece Title', 'Year', 'Date', 'Date Published', 'Event Name', 'Format/Genre', 'Venue', 'City', 'State/Province', 'Country', 'Notes', 'Tags', 'Display Video', 'Video URL', 'Text/Event URL', 'Language', 'License', 'Date Accessed']
 
 
-
-## Installing
+## Installation
 
 
 #### SSH to server and make sure you have the needed dependencies.
@@ -41,27 +44,36 @@
 
      flask run --host=0.0.0.0 --port=80
 
-#### Uncomment and use this instead to keep the script running after you close your terminal window.
+#### Or uncomment and use this command to keep the dynamic site running after you close your terminal window.
 
      #nohup flask run --host=0.0.0.0 --port=80
+
+#### That's it! If you made it through without errors, the site should be up and running.
+
+#### Pages are generated dynamically by creator field and by individual tags (which are separated by commas in the CSV metadata).
+
+     *your_domain*/creator/Holly_Melgard/
+
+     *your_domain*/tag/collaboration/
+     
 
 #### Uncomment and run this command to start the Apache server again (or just reboot server and it will launch by default).
 
      #/etc/init.d/apache2 start
 
 
-####
 
-#### Pages are generated dynamically by creator field and by individual tags (comma-separated in CSV metadata, no limit on number used).
+#### 
 
-     *your_domain*/creator/Holly_Melgard/
+#### Code samples borrowed from these tutorials:
+     
+     http://blog.apps.chicagotribune.com/2010/12/07/from-spreadsheet-to-html-in-15-minutes-with-python-tablefu-jinja-and-flask/
+     
+     https://nicolas.perriault.net/code/2012/dead-easy-yet-powerful-static-website-generator-with-flask/
 
-     *your_domain*/tag/collaboration/
 
-
-
-####
 
 #### CC0 1.0 Universal (CC0 1.0)
 
 #### https://creativecommons.org/publicdomain/zero/1.0/
+
