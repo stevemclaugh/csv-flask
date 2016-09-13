@@ -12,6 +12,13 @@
      ['Creator', 'Piece Title', 'Year', 'Date', 'Date Published', 'Event Name', 'Format/Genre', 'Venue', 'City', 'State/Province', 'Country', 'Notes', 'Tags', 'Display Video', 'Video URL', 'Text/Event URL', 'Language', 'License', 'Date Accessed']
 
 
+#### Pages are generated dynamically by creator field and by individual tags (which are separated by commas in the CSV metadata).
+
+     *your_domain*/creator/Holly_Melgard/
+
+     *your_domain*/tag/collaboration/
+
+
 ## Installation
 
 
@@ -47,12 +54,6 @@
 
 #### That's it! If you made it through without errors, the site should be up and running.
 
-#### Pages are generated dynamically by creator field and by individual tags (which are separated by commas in the CSV metadata).
-
-     *your_domain*/creator/Holly_Melgard/
-
-     *your_domain*/tag/collaboration/
-     
 
 #### If you want to restart the Apache server, run this command (or just reboot and it will launch by default).
 
