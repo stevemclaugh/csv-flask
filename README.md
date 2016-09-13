@@ -66,14 +66,11 @@
 #### 
 
 #### To learn more, see the following tutorials (from which I cribbed some of this code):
-     
 [http://blog.apps.chicagotribune.com/2010/12/07/from-spreadsheet-to-html-in-15-minutes-with-python-tablefu-jinja-and-flask/](http://blog.apps.chicagotribune.com/2010/12/07/from-spreadsheet-to-html-in-15-minutes-with-python-tablefu-jinja-and-flask/)
-     
 [https://nicolas.perriault.net/code/2012/dead-easy-yet-powerful-static-website-generator-with-flask/](https://nicolas.perriault.net/code/2012/dead-easy-yet-powerful-static-website-generator-with-flask/)
 
 
 
 #### CC0 1.0 Universal (CC0 1.0)
-
-#### https://creativecommons.org/publicdomain/zero/1.0/
+[https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
 
