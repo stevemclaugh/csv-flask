@@ -44,9 +44,9 @@
 
      flask run --host=0.0.0.0 --port=80
 
-#### Or uncomment and use this command to keep the dynamic site running after you close your terminal window.
+#### Or use this command to keep the site running after you close your shell session.
 
-     #nohup flask run --host=0.0.0.0 --port=80
+     nohup flask run --host=0.0.0.0 --port=80
 
 #### That's it! If you made it through without errors, the site should be up and running.
 
@@ -57,9 +57,9 @@
      *your_domain*/tag/collaboration/
      
 
-#### Uncomment and run this command to start the Apache server again (or just reboot server and it will launch by default).
+#### If you want to restart the Apache server, run this command (or just reboot server and it will launch by default).
 
-     #/etc/init.d/apache2 start
+     /etc/init.d/apache2 start
 
 
 
@@ -67,9 +67,9 @@
 
 #### To learn more, see the following tutorials (from which I cribbed some of this code):
      
-     http://blog.apps.chicagotribune.com/2010/12/07/from-spreadsheet-to-html-in-15-minutes-with-python-tablefu-jinja-and-flask/
+[http://blog.apps.chicagotribune.com/2010/12/07/from-spreadsheet-to-html-in-15-minutes-with-python-tablefu-jinja-and-flask/](http://blog.apps.chicagotribune.com/2010/12/07/from-spreadsheet-to-html-in-15-minutes-with-python-tablefu-jinja-and-flask/)
      
-     https://nicolas.perriault.net/code/2012/dead-easy-yet-powerful-static-website-generator-with-flask/
+[https://nicolas.perriault.net/code/2012/dead-easy-yet-powerful-static-website-generator-with-flask/](https://nicolas.perriault.net/code/2012/dead-easy-yet-powerful-static-website-generator-with-flask/)
 
 
 
