@@ -33,7 +33,7 @@ def tag(tag):
     flat_table=[]
     flat_table.append(table._get_columns())
     for row in table:
-        if str(tag) in str(row['Tags']):
+        if str(tag).lower() in [item.lower().strip() for item in str(row['Tags']).split(',')]:
             flat_table.append(list(row))
     t2=table_fu.TableFu(flat_table)
     html = env.get_template(TEMPLATE_FILE).render(table=t2)

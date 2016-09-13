@@ -41,7 +41,7 @@
 
      flask run --host=0.0.0.0 --port=80
 
-#### Uncomment and use this instead to keep the script running after you end the current ssh session.
+#### Uncomment and use this instead to keep the script running after you close your terminal window.
 
      #nohup flask run --host=0.0.0.0 --port=80
 
@@ -52,11 +52,11 @@
 
 ####
 
-#### So far, pages are generated dynamically by creator field and by tags (which are comma-separated in CSV metadata).
+#### Pages are generated dynamically by creator field and by individual tags (comma-separated in CSV metadata, no limit on number used).
 
-     http://138.68.61.170/creator/Holly_Melgard/
+     *your_domain*/creator/Holly_Melgard/
 
-     http://138.68.61.170/tag/collaboration/
+     *your_domain*/tag/collaboration/
 
 
 
