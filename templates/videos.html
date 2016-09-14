@@ -94,6 +94,7 @@ div.{
          {% endif %}
 
 
+{% if row['Display Record']=="TRUE" %}
 
 
 <div class="creator">{{ row['Creator'] }}</div>
@@ -130,6 +131,11 @@ div.{
 <div class="field"><small>&#9659; Tags:  {{ row['Tags'] }}</small></div>
          {% endif %}
 
+         {% if row['Text/Event URL'] %}
+<div class="field">&#9659; <a href="{{ row['Text/Event URL']|safe }}">{{ row['Text/Event URL']|safe }}</a></div>
+         {% endif %}
+
+
 
 
          {% if row['Video URL'] %}
@@ -139,7 +145,7 @@ div.{
          {% endif %}
 
 
-
+{% endif %}
 
 
 
