@@ -131,13 +131,6 @@ div.{
 <div class="field"><small>&#9659; Tags:  {{ row['Tags'] }}</small></div>
          {% endif %}
 
-         {% if row['Text/Event URL'] %}
-<div class="field">&#9659; <a href="{{ row['Text/Event URL']|safe }}">{{ row['Text/Event URL']|safe }}</a></div>
-         {% endif %}
-
-
-
-
          {% if row['Video URL'] %}
          {% if row['Display Video']=="FALSE" %}
 <div class="field">&#9659; <a href="{{ row['Video URL']|safe }}">{{ row['Video URL']|safe }}</a></div>
